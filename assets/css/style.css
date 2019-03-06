@@ -1,0 +1,196 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+/* Grid */
+
+/* CLEAR FIX */
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/* Border-Box Reset */
+html {
+	box-sizing: border-box;
+  }
+  *, *:before, *:after {
+	box-sizing: inherit;
+  }
+
+
+  /* General Styles */
+
+body {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+
+h1, h2 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+h2 {
+	color: #4aaaa5;
+}
+
+h1 {
+	color: #fff;
+	padding: 20px;
+}
+.full-width {
+	width: 100%;
+	
+}
+.header-container {
+	display: inline-block;
+	margin: auto;
+	width: 100%;
+	padding: 0px 203px 0px 203px;
+	margin: 0px 100px 0px 50px;
+	background-color: #fff;
+	border-bottom: 2px solid #ccc;
+	
+}
+
+
+.content-container {
+	display: inline-block;
+	width: 100%;
+	background-image: url("../images/circles-light.png");
+	background-color:#9097a0;
+	background-size: repeat;
+}
+
+.content-title {
+	padding: 0px 0px 20px 0px;
+	border-bottom: 1px solid #777777;
+	
+}
+
+.content {
+	width: 660px;
+	vertical-align: middle;
+	margin: 150px 100px 150px 100px;
+	margin: auto;
+	padding: 30px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	}
+
+/* Header */
+
+.header-name {
+	background-color:  #4aaaa5;
+	float: left;
+}
+
+/* Navigation Section */
+
+.nav {
+	float: right;
+	padding: 5px 0px 5px 0px;
+	
+	}
+
+.nav li {
+	display: inline-block;
+	margin: 0px 5px 0px 0px;
+	padding: 0px 10px 0px 0px;
+	border-right: 1px solid #ddd;
+	font-size: 12px;
+	vertical-align: middle;
+}
+.nav li:last-child {
+	margin-right: 0;
+	border-right: none;
+}
+
+a {
+	text-decoration: none;
+	color: #777777;
+}
+/* TO PLAY WITH
+a:hover {
+	color: #a9b2b9;
+}
+*/
+
+/* Content */
+
+.about-image {
+	float: left;
+	padding: 25px 25px 25px 25px;
+}
+
+/* Footer */
+
+footer {
+	padding: 50px 0px 5px 0px;
+	margin-bottom: 0;
+	text-align: center;
+	border-top: 10px solid #4aaaa5;
+	background-color: #666666;
+}
