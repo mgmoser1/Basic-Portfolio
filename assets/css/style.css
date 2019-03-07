@@ -100,18 +100,34 @@ h1 {
 	color: #fff;
 	padding: 20px;
 }
+
+h3 {
+	color: #fff;
+	padding: 10px;
+	font-size: 15px;
+	background-color:  #4aaaa5;
+	float: left;
+}
+
+/* Don't think this is working */
 .full-width {
 	width: 100%;
+	background-color: purple;/* #fff;*/
+	border-bottom: 2px solid #ccc;
+	height: 62px;
+	
 	
 }
 .header-container {
 	display: inline-block;
-	margin: auto;
-	width: 100%;
-	padding: 0px 203px 0px 203px;
-	margin: 0px 100px 0px 50px;
-	background-color: #fff;
-	border-bottom: 2px solid #ccc;
+
+	width: 960px;
+	margin: 0px 150px 0px 150px;
+	/* padding: 0px 0px 0px 110px; */
+	/* margin: 0px 200px 0px 225px; */
+	background-color: aqua;
+	/* background-color: #fff; */
+	/* border-bottom: 2px solid #ccc; */
 	
 }
 
@@ -131,10 +147,10 @@ h1 {
 }
 
 .content {
-	width: 660px;
+	width: 960px;
 	vertical-align: middle;
-	margin: 150px 100px 150px 100px;
 	margin: auto;
+	margin: 30px 150px 30px 150px;
 	padding: 30px;
 	background-color: #fff;
 	border: 1px solid #ddd;
@@ -193,4 +209,30 @@ footer {
 	text-align: center;
 	border-top: 10px solid #4aaaa5;
 	background-color: #666666;
+}
+
+
+/* Portfolio */
+
+.portfolio div {
+	display: inline-block;
+	margin: 75px;
+	padding: 15px;
+}
+
+#Project1 {
+	background-image: url("../images/cats-q-c-200-150-3.jpg");
+	
+}
+#Project2 {
+	background-image: url("../images/cats-q-c-200-150-4.jpg");
+}
+#Project3 {
+	background-image: url("../images/cats-q-c-200-150-5.jpg");
+}
+#Project4 {
+	background-image: url("../images/cats-q-c-200-150-9.jpg");
+}
+#Project5 {
+	background-image: url("../images/cats-q-c-200-150-7.jpg");
 }
