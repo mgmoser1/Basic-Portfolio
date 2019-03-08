@@ -109,32 +109,32 @@ h3 {
 	float: left;
 }
 
-/* Don't think this is working */
+p {
+	line-height: 30px;
+	padding-top: 15px;
+}
+
+
 .full-width {
 	width: 100%;
-	background-color: purple;/* #fff;*/
+	background-color: #fff;
 	border-bottom: 2px solid #ccc;
 	height: 62px;
-	
-	
 }
-.header-container {
-	display: inline-block;
 
+.header-container {
+	/*display: inline-block;*/
+	
 	width: 960px;
 	margin: 0px 150px 0px 150px;
-	/* padding: 0px 0px 0px 110px; */
-	/* margin: 0px 200px 0px 225px; */
-	background-color: aqua;
-	/* background-color: #fff; */
-	/* border-bottom: 2px solid #ccc; */
-	
-}
+	background-color: #fff;
+	}
 
 
 .content-container {
 	display: inline-block;
 	width: 100%;
+	padding-bottom: 75px; 
 	background-image: url("../images/circles-light.png");
 	background-color:#9097a0;
 	background-size: repeat;
@@ -142,7 +142,7 @@ h3 {
 
 .content-title {
 	padding: 0px 0px 20px 0px;
-	border-bottom: 1px solid #777777;
+	border-bottom: 1px solid #dddddd;
 	
 }
 
@@ -167,7 +167,8 @@ h3 {
 
 .nav {
 	float: right;
-	padding: 5px 0px 5px 0px;
+	padding: 20px 0px 20px 0px;
+	/* Need to fix text  */
 	
 	}
 
@@ -177,49 +178,126 @@ h3 {
 	padding: 0px 10px 0px 0px;
 	border-right: 1px solid #ddd;
 	font-size: 12px;
-	vertical-align: middle;
+	
 }
 .nav li:last-child {
 	margin-right: 0;
 	border-right: none;
 }
 
+
+/* 
+==================================================
+Links
+==================================================
+*/
+
 a {
 	text-decoration: none;
 	color: #777777;
 }
-/* TO PLAY WITH
+/* change color */
 a:hover {
-	color: #a9b2b9;
+	color: #D319D7;
 }
-*/
 
-/* Content */
+
+/* 
+==================================================
+Content
+==================================================
+*/
 
 .about-image {
 	float: left;
 	padding: 25px 25px 25px 25px;
 }
 
-/* Footer */
+/* 
+==================================================
+Footer
+==================================================
+*/
 
 footer {
 	padding: 50px 0px 5px 0px;
 	margin-bottom: 0;
 	text-align: center;
+	color: #dddddd;
 	border-top: 10px solid #4aaaa5;
 	background-color: #666666;
 }
 
 
-/* Portfolio */
+/* 
+==================================================
+Portfolio
+==================================================
+*/
 
 .portfolio div {
 	display: inline-block;
-	margin: 75px;
-	padding: 15px;
+	margin: 30px;
+	padding: 10px;
+
 }
 
+.project-container {
+		position: relative;
+}
+
+.text-block {
+	position: absolute;
+	bottom: -10px;
+	right: -20px;
+	background-color: #4aaaa5;
+	width: 91%;
+	
+}
+
+.project-container:hover {
+	background-color: #D319D7;
+	}
+
+
+/* 
+==================================================
+Contact
+==================================================
+*/
+
+form {
+	line-height: 200%;
+}
+
+::placeholder {
+	color: #777777;
+	padding: 10px;
+}
+
+.input-long {
+	width: 100%;
+	height: 30px;
+}
+textarea {
+	width: 100%;
+	height: 200px;
+}
+
+.form-submit-button {
+	background-color: #4aaaa5;
+	padding: 8px 22px;
+	border: none;
+	color: #fff;
+}
+
+.form-submit-button:hover {
+	background-color: #D319D7;
+	}
+
+
+
+/*
 #Project1 {
 	background-image: url("../images/cats-q-c-200-150-3.jpg");
 	
@@ -236,3 +314,4 @@ footer {
 #Project5 {
 	background-image: url("../images/cats-q-c-200-150-7.jpg");
 }
+*/
