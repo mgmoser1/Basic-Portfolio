@@ -1,75 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
-
-
-/* 
-==================================================
-CLEAR FIX
-==================================================
-*/
-
-.group:before,
-.group:after {
-  content: "";
-  display: table;
-}
-.group:after {
-  clear: both;
-}
-.group {
-  clear: both;
-  *zoom: 1;
-}
-
-
 /* 
 ==================================================
 Border-Box Reset
@@ -108,15 +36,29 @@ body {
 	flex-shrink: 0;
 }
 
+
+
 /* 
 ==================================================
 General Styles
 ==================================================
 */
 
+/* html, body {
+	min-height: 100%;
+} */
+
 body {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    color: #777777;
+	color: #777777;
+/*	background-color: #7F72B3; */
+		 
+		/* display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh; */
+
 }
 
 h1, h2 {
@@ -126,19 +68,21 @@ h1, h2 {
 }
 
 h2 {
-	color: #4aaaa5;
+/*	color: #83CC84; */
+	color: #7F72B3;
 }
 
 h1 {
-	color: #fff;
-	padding: 20px;
-}
+    color: #fff;
+/*    background-color:  #7F72B3; */
+    padding: 20px;
+ }
 
 h3 {
 	color: #fff;
 	padding: 10px;
 	font-size: 15px;
-	background-color:  #4aaaa5;
+/*	background-color: #7F72B3; */
 	float: left;
 }
 
@@ -148,36 +92,9 @@ p {
 }
 
 
+
+
 /* 
-==================================================
-Header
-==================================================
-*/
-
-.header-name {
-	background-color:  #4aaaa5;
-	float: left;
-}
-
-.full-width {
-	width: 100%;
-	min-width: 1200px; /* content was overflowing when screen was small. */
-	background-color: #fff;
-	border-bottom: 2px solid #ccc;
-	height: 62px;
-}
-
-.header-container {
-	/*display: inline-block;*/
-	
-	width: 960px;
-	margin: 0px 150px 0px 150px;
-	background-color: #fff;
-	}
-
-
-
-	/* 
 ==================================================
 Links
 ==================================================
@@ -185,27 +102,73 @@ Links
 
 a {
 	text-decoration: none;
-	color: #777777;
+	color: #696B6B;
 }
 /* change color */
 a:hover {
-	color: #D319D7;
+	color: #83CC84;
 }
 
-	/* 
+.header-name {
+  color: #373A3A;
+  text-decoration: none;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.5em;
+}
+
+
+/* 
 ==================================================
-Main Content
+Header
 ==================================================
 */
 
+
+
+.full-width {
+	/* width: 100%;
+	display: flex;
+	justify-content: center; */
+	/*min-width: 1200px; /* content was overflowing when screen was small. */
+    background-color: #fff;
+    border-bottom: 2px solid #ccc;
+	/*height: 62px; */
+}
+
+.header-container {
+	/* display: flex;
+	justify-content: space-between; */
+/*	width: 75%;  
+	margin: 0px 150px 0px 150px; */
+	background-color: #fff;
+/*	background-color:  #7F72B3; */
+}
+
+.header-name {
+	padding: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+/*	background-color:  #7F72B3; */
+/*	background-color: #fff; */
+} 
+
+/* 
+==================================================
+Content
+==================================================
+*/
+
+
 .content-container {
-	display: inline-block;
-	width: 100%;
-	min-width: 1200px;  /* content was overflowing when screen was small. */
-	padding-bottom: 75px; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-image: url("../images/circles-light.png");
-	background-color:#9097a0;
+	background-color: #9097a0;
 	background-size: repeat;
+	flex: 1 0 auto;
+	height: 100%;
+
 }
 
 .content-title {
@@ -215,46 +178,17 @@ Main Content
 }
 
 .content {
-	width: 960px;
+	width: 75%;
 	vertical-align: middle;
-	margin: auto;
-	margin: 30px 150px 30px 150px;
-	padding: 30px;
+    padding: 30px;
 	background-color: #fff;
 	border: 1px solid #ddd;
+    margin-top: 75px;
 }
 
 .about-image {
 	float: left;
-	padding: 25px 25px 25px 25px;
 }
-
-
-
-/* 
-==================================================
-Navigation Section
-==================================================
-*/
-
-.nav {
-	float: right;
-	padding: 20px 0px 20px 0px;
-}
-
-.nav li {
-	display: inline-block;
-	margin: 0px 5px 0px 0px;
-	padding: 0px 10px 0px 0px;
-	border-right: 1px solid #ddd;
-	font-size: 12px;
-	
-}
-.nav li:last-child {
-	margin-right: 0;
-	border-right: none;
-}
-
 
 
 /* 
@@ -263,45 +197,22 @@ Footer
 ==================================================
 */
 
-footer {
+.footer-container {
+	display: flex;
+	justify-content: center;
+/*	color: #dddddd;    
+	border-top: 8px solid#7F72B3;
+	background-color: #666666;
+	width: 100%;   */
+    }
+    
+
+.myFooter {
 	padding: 50px 0px 5px 0px;
 	margin-bottom: 0;
+	width: 75%;
 	text-align: center;
-	color: #dddddd;
-	border-top: 8px solid #4aaaa5;
-	background-color: #666666;
-	min-width: 1200px; /* content was overflowing when screen was small. */
-}
-
-
-/* 
-==================================================
-Portfolio
-==================================================
-*/
-
-.portfolio div {
-	display: inline-block;
-	margin: 30px;
-	padding: 10px;
-
-}
-
-.project-container {
-		position: relative;
-}
-
-.text-block {
-	position: absolute;
-	bottom: -10px;
-	right: -20px;
-	background-color: #4aaaa5;
-	width: 91%;
-	
-}
-
-.project-container:hover {
-	background-color: #D319D7;
+	flex-shrink: 0;
 }
 
 
@@ -312,7 +223,11 @@ Contact
 */
 
 form {
-	line-height: 200%;
+    line-height: 200%;
+    }
+
+.form-group {
+	padding: 10px;
 }
 
 ::placeholder {
@@ -330,33 +245,60 @@ textarea {
 }
 
 .form-submit-button {
-	background-color: #4aaaa5;
+	background-color: #7F72B3;
 	padding: 8px 22px;
 	border: none;
 	color: #fff;
 }
 
 .form-submit-button:hover {
-	background-color: #D319D7;
+	background-color: #83CC84;
+    }
+    
+
+/* 
+==================================================
+Portfolio
+==================================================
+*/
+.portfolio {
+	/*	align-items: center; */
+	margin-left: -75px;
+	}
+	
+.portfolio-image  {
+	width: 200px;
+	height: 150px;
+	border: 1px solid #7F72B3;
+}
+
+.project-name {
+	color: #83CC84;
+}
+
+.portfolio div {
+	display: inline-block;
+	margin: 30px;
+	padding: 5px 5px 5px 5px;
+}
+
+.project-container {
+	position: relative;
+
+}
+
+.portfolio img {
+	margin-left: 0px;
 	}
 
+.text-block {
+	position: absolute;
+	bottom: -10px;
+	left: -25px;
+	background-color: #7F72B3;
+	width: 95.25%;
+}
 
-
-/*
-#Project1 {
-	background-image: url("../images/cats-q-c-200-150-3.jpg");
-	
+.project-container:hover {
+	background-color: #7F72B3;
 }
-#Project2 {
-	background-image: url("../images/cats-q-c-200-150-4.jpg");
-}
-#Project3 {
-	background-image: url("../images/cats-q-c-200-150-5.jpg");
-}
-#Project4 {
-	background-image: url("../images/cats-q-c-200-150-9.jpg");
-}
-#Project5 {
-	background-image: url("../images/cats-q-c-200-150-7.jpg");
-}
-*/

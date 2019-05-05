@@ -1,83 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
-    <body>
-        <header class="group full-width">
-            <section class="header-container">
-                <section class="header-name">
-                    <h1>Megan Moser</h1>
-                </section>
-                
-                    <nav class="nav">
-                        <!-- About, Portfolio, Contact Links -->
-                        <ul>
-                            <li><a href="index.html">About</a></li>
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="contact">Contact</a></li>
-                        </ul>
-                   
-                    </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-            </section>
-        </header>
-        
-            <div class="group content-container">
-                <section class="content">
-                    <div class="content-title">
+</head>
+<body>
+    <div class="container-fluid">
+            <header class="container header-container">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand header-name" href="index.html">Megan Moser</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="d-flex justify-content-end">
+                          <div class="navbar-nav">
+                            <a class="nav-item nav-link" href="index.html">About</a>
+                            <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+                            <a class="nav-item nav-link" href="contact.html">Contact</a>
+                            <a class="nav-item nav-link" href="https://github.com/mgmoser1">Github</a>
+                            <a class="nav-item nav-link" href="https://www.linkedin.com/in/megan-moser-017391159?trk=people-guest_profile-result-card_result-card_full-click">LinkedIn</a>
+                          </div>
+                        </div>
+                        </div>
+                      </nav>
+                </header> <!-- end container -->
+        <div class="container w-100 content-container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="card w-75 content mx-auto my-5"> <!---->
+                        <div class="card-body justify-content-center align-items-center">
+                            <h2 class="card-title content-title">Portfolio</h2>
+                            <!-- Images with links, floated -->
+                    <section class="portfolio card-text text-center"> <!--justify-content-center align-items-center-->
+                            <div class="col-sm-12 col-md-4">
 
-                        <h2>Portfolio</h2>
-                    
+                                <div class="card project-container" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h2 class="card-title project-name">Bar Finder</h2>
+                                        <img class="portfolio-image" src="assets/images/bar-finder-4-3.jpg">
+                                        <a href="https://mgmoser1.github.io/group-project-1/" class="card-link">Play Me</a>
+                                        <a href="https://github.com/mgmoser1/group-project-1" class="card-link">See My Code</a>
+                                    </div>
+                                </div>
+
+                                
+                            </div>
+                            <div class="col-sm-12 col-md-4">
+
+                                <div class="card project-container" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h2 class="card-title project-name">Crystal Mayhem</h2>
+                                        <a href="https://mgmoser1.github.io/Crystal-Mayhem/"><img class="portfolio-image" src="assets/images/crystal-mayhem-4-3.jpg"></a>
+                                        <a href="https://mgmoser1.github.io/Crystal-Mayhem/" class="card-link">Play Me</a>
+                                        <a href="https://github.com/mgmoser1/Crystal-Mayhem" class="card-link">See My Code</a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-sm-12 col-md-4 d-none d-sm-inline-block"> <!-- ?? -->
+
+                                <div class="card project-container" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h2 class="card-title project-name">TriviArt</h2>
+                                        <a href="https://mgmoser1.github.io/TriviaGame/"><img class="portfolio-image" src="assets/images/trivia-game-4-3.jpg"></a>
+                                        <a href="https://mgmoser1.github.io/TriviaGame/" class="card-link">Play Me</a>
+                                        <a href="https://github.com/mgmoser1/TriviaGame" class="card-link">See My Code</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-sm-12 col-md-4 d-sm-inline-block"> <!-- ?? -->
+
+                                <div class="card project-container" style="width: 18rem;">
+                                    <div class="card-body">
+                                        <h2 class="card-title project-name">Train Tracker</h2>
+                                        <a href="https://mgmoser1.github.io/Train-Scheduler/"><img class="portfolio-image" src="assets/images/train-tracker-4-3.jpg"></a>
+                                        <a href="https://mgmoser1.github.io/Train-Scheduler/" class="card-link">Try Me</a>
+                                        <a href="https://github.com/mgmoser1/Train-Scheduler" class="card-link">See My Code</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                           <!--  <div class="col-sm-12 col-md-4 d-sm-inline-block">
+                                <div class="project-container">
+                                    <a href="#"><img class="portfolio-image" src="assets/images/cats-q-c-200-150-7.jpg"></a>
+                                    <div class="text-block">
+                                        <h3>Rock Paper Scissors</h3>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </section>
+                        </div>
                     </div>
-
-                    <!-- Images with links, floated -->
-                    <section class="portfolio">
-                        
-                        <div class="project-container">
-                            <a href="#"><img src="assets/images/cats-q-c-200-150-3.jpg"></a>
-                            <div class="text-block">
-                                <h3>Hangman</h3>
-                            </div>
-                        </div>
-                        
-                        <div class="project-container">
-                            <a href="#"><img src="assets/images/cats-q-c-200-150-4.jpg"></a>
-                            <div class="text-block">
-                                <h3>RPG Game</h3>
-                            </div>
-                        </div>
-                        
-                        <div class="project-container">
-                            <a href="#"><img src="assets/images/cats-q-c-200-150-5.jpg"></a>
-                            <div class="text-block">
-                                <h3>Trivia Game</h3>
-                            </div>
-                        </div>
-                        
-                        <div class="project-container">
-                            <a href="#"><img src="assets/images/cats-q-c-200-150-9.jpg"></a>
-                            <div class="text-block">
-                                <h3>Rutgers Info Widget</h3>
-                            </div>
-                        </div>
-                        
-                        <div class="project-container">
-                            <a href="#"><img src="assets/images/cats-q-c-200-150-7.jpg"></a>
-                            <div class="text-block">
-                                <h3>Rock Paper Scissors</h3>
-                            </div>
-                        </div>
-                
-                    </section>
-                    
-                </section>
+                </div>
             </div>
-       
-            <footer class="footer">Copyright&copy</footer>
-    </body>
+        </div>
+        
+        <div class="row">
+            <div class="col-xs-12 w-100">
+                <footer class="footer-container">
+                        <div class="container myFooter">
+                            <span class="text-muted">Copyright&copy</span>
+                        </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
 </html>

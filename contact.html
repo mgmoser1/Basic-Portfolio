@@ -1,55 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Contact</title>
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
-    <body>
-        <header class="group full-width">
-            <section class="header-container">
-                <section class="header-name">
-                    <h1>Megan Moser</h1>
-                </section>
-            
-                <nav class="nav">
-                    <!-- About, Portfolio, Contact Links -->
-                    <ul>
-                        <li><a href="index.html">About</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="contact">Contact</a></li>
-                    </ul>
-                
-                </nav>
-            </section>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+    <script src="assets/javascript/app.js"></script>
 
-        <div class="group content-container">
-            <div class="background">
-                <section class="content">
-                                
-                    <div class="content-title">
-        
-                        <h2>Contact</h2>
+</head>
+<body>
+    <div class="container-fluid">
+            <header class="container header-container">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand header-name" href="index.html">Megan Moser</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="d-flex justify-content-end">
+                          <div class="navbar-nav">
+                            <a class="nav-item nav-link" href="index.html">About</a>
+                            <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
+                            <a class="nav-item nav-link" href="contact.html">Contact</a>
+                            <a class="nav-item nav-link" href="https://github.com/mgmoser1">Github</a>
+                            <a class="nav-item nav-link" href="https://www.linkedin.com/in/megan-moser-017391159?trk=people-guest_profile-result-card_result-card_full-click">LinkedIn</a>
+                          </div>
+                        </div>
+                        </div>
+                      </nav>
+                </header> <!-- end container -->
+        <div class="container w-100 content-container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="card w-100 content mx-auto my-5">
+                        <div class="card-body">
+                            <h2 class="card-title content-title">Contact</h2>
+                            
+                        
+                            <!-- Form with Name, Email, Message, Submit Button -->
+                            <form>
+                                <div class="form-group">
+                                    <label>Name:</label> <br>
+                                    <input type="text" class="form-control input-long" id="name" name="name" placeholder="John Smith">
+                                </div>
+                                <div class="form-group">
+                                    <label>Email:</label> <br>
+                                    <input type="email" class="form-control input-long" id="email" name="email" placeholder="name@example.com">
+                                </div>
+                                <div class="form-group">
+                                    <label>Message:</label> <br>
+                                    <textarea class="form-control" id="comment"></textarea>
+                                </div>
+                                <button type="submit" class="form-submit-button" id="submit">Submit</button>
+                            </form>          
+                        </div>
                     </div>
-
-                <!-- Form with Name, Email, Message, Submit Button -->
-
-                    <form>
-                        Name:<br>
-                        <input class="input-long" type="text" name="name" placeholder="John Smith"><br>
-                        Email:<br>
-                        <input class="input-long" type="email" name="email" placeholder="example@gmail.com"><br>
-                        Message:<br>
-                        <textarea name="message"></textarea><br>
-                        <input class="form-submit-button" type="submit" value="Submit">
-                    </form>
-                </section>
+                </div>
             </div>
-        </div>            
-
-        <footer class="footer">Copyright&copy</footer>
-    </body>
+        </div>
+        
+        <div class="row">
+            <div class="col-xs-12 w-100">
+                <footer class="footer-container">
+                        <div class="container myFooter">
+                            <span class="text-muted">Copyright&copy</span>
+                        </div>
+                </footer>
+            </div>
+        </div>
+      </div>
+</body>
 </html>
